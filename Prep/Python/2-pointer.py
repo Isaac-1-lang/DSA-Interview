@@ -1,3 +1,4 @@
+import utils.session
 def twopointer(nums, target):
     left,right  = 0, len(nums)  - 1
     while left < right:
@@ -9,3 +10,10 @@ def twopointer(nums, target):
         else:
             right -= 1
     return []
+
+
+
+nums  = [1, 2, 3, 4, 6]
+target = 6
+result = twopointer(nums, target)
+print(result)  # Output: [1, 3]
